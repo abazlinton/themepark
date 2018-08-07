@@ -47,26 +47,7 @@ public class TestThemePark {
     public void testGetAllReviewed() {
         assertEquals(4, themePark.getAllLocations().size());
     }
-
-    @Test
-    public void testAgesPlaygroundYoung() {
-        assertEquals(true, playground.isAllowedTo(youngVisitor));
-    }
-
-    @Test
-    public void testAgesPlaygroundParent() {
-        assertEquals(false, playground.isAllowedTo(parentVisitor));
-    }
-
-    @Test
-    public void testAgesRollercoasterYoung() {
-        assertEquals(false, rollercoaster.isAllowedTo(youngVisitor));
-    }
-
-    @Test
-    public void testAgesRollercoasterParent() {
-        assertEquals(true, rollercoaster.isAllowedTo(parentVisitor));
-    }
+    
 
     @Test
     public void testReport() {
