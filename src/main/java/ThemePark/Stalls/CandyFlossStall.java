@@ -14,7 +14,7 @@ public class CandyFlossStall extends Stall {
         return defaultPrice();
     }
 
-    public CandyFlossStall(String name, String ownerName, int partingSpot, int funRating)   {
-        super(name, ownerName, partingSpot, funRating);
+    public CandyFlossStall(String name, String ownerName, int parkingSpot, int funRating)   {
+        super(name, ownerName, parkingSpot, funRating);
     }
 }
