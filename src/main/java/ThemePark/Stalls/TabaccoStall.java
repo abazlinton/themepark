@@ -3,7 +3,7 @@ package ThemePark.Stalls;
 import ThemePark.Interfaces.ISecurity;
 import ThemePark.Visitors.Visitor;
 
-public class TobaccoStall extends Stall {
+public class TabaccoStall extends Stall {
 
     public Boolean isAllowedTo(Visitor visitor){
         Boolean isOldEnough = visitor.getAge() >= 18;
@@ -20,7 +20,7 @@ public class TobaccoStall extends Stall {
         return defaultPrice();
     }
 
-    public TobaccoStall(String name, String ownerName, int partingSpot, int funRating)   {
+    public TabaccoStall(String name, String ownerName, int partingSpot, int funRating)   {
         super(name, ownerName, partingSpot, funRating);
     }
 }

@@ -19,9 +19,6 @@ public abstract class Stall implements ITicketed, IReviewed, ISecurity {
         this.rating = rating;
     }
 
-    public double priceFor(Visitor visitor){
-        return defaultPrice();
-    }
 
     public String getName() {
         return name;

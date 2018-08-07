@@ -1,9 +1,8 @@
 import ThemePark.Attractions.Dodgems;
 import ThemePark.Attractions.Playground;
 import ThemePark.Attractions.Rollercoaster;
-import ThemePark.Interfaces.IReviewed;
 import ThemePark.Interfaces.ISecurity;
-import ThemePark.Stalls.TobaccoStall;
+import ThemePark.Stalls.TabaccoStall;
 import ThemePark.ThemePark;
 import ThemePark.Visitors.Visitor;
 import org.junit.Before;
@@ -21,7 +20,7 @@ public class TestThemePark {
     Rollercoaster rollercoaster;
     Dodgems dodgems;
     ThemePark themePark;
-    TobaccoStall tobaccoStall;
+    TabaccoStall tabaccoStall;
 
     @Before
     public void before() {
@@ -30,13 +29,13 @@ public class TestThemePark {
         playground = new Playground("Happy Tree Friends", 6);
         rollercoaster = new Rollercoaster("Death Stirr", 6);
         dodgems = new Dodgems("Mud Max", 6);
-        tobaccoStall = new TobaccoStall("Smoke Screen", "Dodgy Bill", 3, 1);
+        tabaccoStall = new TabaccoStall("Smoke Screen", "Dodgy Bill", 3, 1);
 
         ArrayList<ISecurity> locations = new ArrayList<>();
         locations.add(playground);
         locations.add(rollercoaster);
         locations.add(dodgems);
-        locations.add(tobaccoStall);
+        locations.add(tabaccoStall);
 
         themePark = new ThemePark(locations);
     }
