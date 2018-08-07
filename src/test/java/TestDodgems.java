@@ -9,14 +9,10 @@ import static org.junit.Assert.assertEquals;
 public class TestDodgems {
 
     private Dodgems dodgems;
-    private Visitor visitor12YearsOld;
-    private Visitor visitor13YearsOld;
 
     @Before
     public void before(){
         dodgems = new Dodgems("Dodgy Dodgems", 7);
-        visitor12YearsOld = new Visitor(12, 100, 10.0);
-        visitor13YearsOld = new Visitor(13, 100, 10.0);
     }
 
     @Test
@@ -36,6 +32,7 @@ public class TestDodgems {
 
     @Test
     public void isHalfPriceIf12_OrUnder(){
+        Visitor visitor12YearsOld = new Visitor(12, 100, 10.0);
         double actualPrice = dodgems.priceFor(visitor12YearsOld);
         double expectedPrice = 2.25;
         assertEquals(expectedPrice, actualPrice, 0.01);
@@ -43,6 +40,7 @@ public class TestDodgems {
 
     @Test
     public void isFullPriceIfOver12(){
+        Visitor visitor13YearsOld = new Visitor(13, 100, 10.0);
         double actualPrice = dodgems.priceFor(visitor13YearsOld);
         double expectedPrice = 4.5;
         assertEquals(expectedPrice, actualPrice, 0.01);
