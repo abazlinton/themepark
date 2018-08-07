@@ -33,21 +33,19 @@ public class TestThemePark {
         tobaccoStall = new TobaccoStall("Smoke Screen", "Dodgy Bill", 3, 1);
 
         ArrayList<ISecurity> locations = new ArrayList<>();
-        //Cast Playground and Rollercoaster to IReviewed (i.e. treat them as IReviewed for the purposes of this line)
         locations.add(playground);
         locations.add(rollercoaster);
         locations.add(dodgems);
         locations.add(tobaccoStall);
 
         themePark = new ThemePark(locations);
-
     }
 
     @Test
     public void testGetAllReviewed() {
         assertEquals(4, themePark.getAllLocations().size());
     }
-    
+
 
     @Test
     public void testReport() {
