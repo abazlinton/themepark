@@ -2,7 +2,6 @@ package ThemePark;
 
 import ThemePark.Interfaces.IReviewed;
 import ThemePark.Interfaces.ISecurity;
-import ThemePark.Interfaces.ITicketed;
 import ThemePark.Visitors.Visitor;
 
 import java.util.ArrayList;
