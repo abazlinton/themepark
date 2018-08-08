@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
-public class TestThemePark {
+public class ThemeParkTest {
 
     Visitor youngVisitor;
     Visitor parentVisitor;

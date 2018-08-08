@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class TestVisitor {
+public class VisitorTest {
     Visitor visitor1;
 
     @Before
